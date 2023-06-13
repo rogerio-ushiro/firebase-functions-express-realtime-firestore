@@ -1,3 +1,6 @@
+const { onRequest } = require("firebase-functions/v2/https");
+// const logger = require("firebase-functions/logger");
+
 const express = require('express')
 const app = express();
 const admin = require('firebase-admin');
@@ -52,4 +55,8 @@ app.get('/', async (req, res) => {
     }
 })
 
-app.listen(process.env.PORT || 3000)
+app.listen(3000, () => {
+    console.log(`Example app listening on port ${3000}`)
+});
+
+exports.api = onRequest(app)

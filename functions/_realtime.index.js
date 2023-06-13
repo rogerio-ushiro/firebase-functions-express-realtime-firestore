@@ -1,3 +1,6 @@
+const { onRequest } = require("firebase-functions/v2/https");
+// const logger = require("firebase-functions/logger");
+
 const express = require('express')
 const app = express();
 const admin = require('firebase-admin');
@@ -8,7 +11,7 @@ var serviceAccount = require("./json_credential_key/key.json");
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
-    databaseURL: 'https://testedb-87f30.firebaseio.com/'
+    databaseURL: 'https://immig-backend-default-rtdb.firebaseio.com'
 })
 
 const db = admin.database();
@@ -63,4 +66,8 @@ app.get('/removeAll', function (req, res) {
         });
 });
 
-app.listen(process.env.PORT || 3000)
+app.listen(3000, () => {
+    console.log(`Example app listening on port ${3000}`)
+});
+
+exports.api = onRequest(app)
