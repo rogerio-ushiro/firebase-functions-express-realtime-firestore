@@ -7,7 +7,7 @@ Using cloud functions with express, database realtime and firestore.
 The process to create the project was:
 ```
 $ firebase init 
-// choose NEW PROJECT, blocker bugs on 
+// choose NEW PROJECT, blocker bugs on created projects
 ```
 
 Test locally
