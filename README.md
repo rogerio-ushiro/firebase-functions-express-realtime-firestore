@@ -27,3 +27,4 @@ To create **json credential key** file:
 ```
 https://console.firebase.google.com/u/0/project/ {PROJECT-NAME} /settings/serviceaccounts/adminsdk
 ```
+...the generated key goes into "json_credential_key" diretory.
