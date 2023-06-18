@@ -55,4 +55,4 @@ Select the right index related to the chosen database
 "main": "_realtime.index.js"
 ```
 - _realtime.index.js
-- _realtime.index.js
+- _firestore.index.js
