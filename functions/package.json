@@ -1,6 +1,6 @@
 {
   "name": "functions",
-  "description": "Cloud Functions for Firebase",
+  "description": "Project to build backend firebase based. Using Cloud Functions (2nd gen) with express, and chooseble database as realtime or firestore.",
   "scripts": {
     "serve": "firebase emulators:start --only functions",
     "shell": "firebase functions:shell",

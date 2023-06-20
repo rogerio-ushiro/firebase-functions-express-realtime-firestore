@@ -2,7 +2,7 @@
 # firebase-functions-express-realtime-firestore
 
 Project to build backend firebase based. 
-Using Cloud Functions (2nd gen) with express, database realtime and firestore.
+Using Cloud Functions (2nd gen) with express, and chooseble database as realtime or firestore.
 
 ## 1. Create Project
 
